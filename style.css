@@ -20,12 +20,7 @@ margin:0px;
 .headText{
     color:white;
 }
-/* The wrapper ID style is used with a div tag to provide a 960px wide page */
-#wrapper {
-width: 960px;height: 800px;
-margin-left: auto;
-margin-right: auto;
-}
+
 
 #right-column {
     position: absolute; 
@@ -89,15 +84,15 @@ margin-right: auto;
 
 }
 
-
-
-
-
 h1,h2,h3,h4,h5,h6,p,li {
-margin-left:15px;
+    margin-left:15px;
 }
-#footer {
-height:80px;
+.contactfooter {
+    color:white;
+    height:10px;
+    font-size:10px;
+    position:fixed;
+    bottom:70px;
 }
 
 
