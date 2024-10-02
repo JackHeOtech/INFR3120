@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+body {
+background-color: black;
+font-family: Verdana, Geneva, Arial, sans-serif;
+padding:0px;
+margin:0px;
+}
+#banner{
+    color:white;
+}
+
+#banner .contactbanner{
+    color:white;
+    position:absolute;
+    right:50%;
+
+}
+
+.headText{
+    color:white;
+}
+/* The wrapper ID style is used with a div tag to provide a 960px wide page */
+#wrapper {
+width: 960px;height: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#right-column {
+    position: absolute; 
+    top: 190px;
+    right:100px;
+    text-align: center;
+    height: 800px;
+    width: 70%;
+    color:white;
+
+}
+
+#right-column .box{
+    display: inline-block;
+    color:white;
+    margin-top: 30px;  
+    margin-right: 30px;
+    vertical-align: top; /*Vertical align allows for texts to be aligned horizontally at the top*/
+    height: 100px;
+    width:200px;
+}
+
+.projectsbanner {
+    position: absolute;
+    right:540px;
+    top: 140px;
+    color:white;
+
+}
+
+.contactform{
+    color:white;
+    display: inline-block;
+    position:absolute;
+    right:50%;
+    bottom:10%;
+    margin-bottom:20px;
+    width:400px;
+}
+
+
+
+.contactform h1{
+    color:white;
+    position:absolute;
+    right: 50%;
+}
+
+.contactform label {
+    display: block; /*Ensures labels stack vertically*/
+    margin-bottom: 8px;
+}
+
+.contactform input[type="text"],
+.contactform input[type="email"],
+.contactform textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+
+}
+
+
+
+
+
+h1,h2,h3,h4,h5,h6,p,li {
+margin-left:15px;
+}
+#footer {
+height:80px;
+}
+
+
+.box {
+    color: white;
+    height: 300px;
+    width: 500px;
+    margin-top: 150px;
+    margin-left: -1px;
+}
+
+img{
+    display:block; /*display block gets rid of that tiny extra space at the bottom of images*/
+}
+
+.aboutmeimage { 
+    display: block; 
+    position: absolute;
+    right: 40%;
+    top: 19%;
+    background-color:white;
+    padding: 7px;
+}
+
+
+.navList { /*Actual box for the navigation links*/
+    color: white;
+    position: absolute;
+    top: 0;           
+    right: 0;           
+}
+
+.navList ul {
+    padding: 0; /*Setting padding to 0 removes that invisible border, putting the links closer together*/
+}
+
+.navList ul li {
+    display: inline-block;  /*Displays each block horizontally*/
+    margin-right: 10px; /*Space between each link*/
+}
+
+
+
+.aboutmevideo {
+    position: absolute;
+    right: 10%;
+    top: 19%;
+    background-color: white;
+    padding: 7px;
+
+}
+
