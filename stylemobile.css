@@ -95,7 +95,7 @@ img{
 
 .aboutmeimage { 
     display: block; 
-    position: static;
+    position: relative;
     right: 40%;
     top: 19%;
     background-color:white;
