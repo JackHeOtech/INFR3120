@@ -79,16 +79,16 @@ img{
     position: relative; /*Remove absolute positioning*/
     right: 40%;
     top: 19%;
-    width:70%;
+    width:100%;
     height:auto; /*Preserving aspect ratio again*/
     background-color:white;
     padding: 7px;
 }
 
 .aboutmevideo {
-    position: relative;
-    width:70%;
-    height:auto;
+    position: relative;/*Since it is a bigger screen compared to mobile I think using relative positioning would allow for some sort of manual movement of elements*/
+    width:100%;
+    height:auto; /*Preserving aspect ratio*/
     right: 10%;
     top: 19%;
     background-color: white;
@@ -116,7 +116,7 @@ img{
 
 .contactform{
     color:white;
-    display: block;
+    display: block; /*Using block here allows for the form elements to stack vertically*/
     margin-bottom:20px;
     width:70%;
 }
@@ -129,7 +129,7 @@ img{
 }
 
 .contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
-    width: 100%;
+    width: 100%;/*Ensuring that contact form blocks take up the entire area of contactform*/
     padding: 10px;
     margin-bottom: 15px;
 

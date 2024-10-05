@@ -128,7 +128,7 @@ img{
 }
 
 .contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
-    width: 100%;
+    width: 100%; /*Ensuring that contact form blocks take up the entire area of contactform*/
     padding: 10px;
     margin-bottom: 15px;
 
