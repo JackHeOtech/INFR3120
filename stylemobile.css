@@ -31,53 +31,25 @@ html, body { /*Have to define html too, not just body*/
 }
 
 #right-column .box {
-    width:100%;
+    width:100%; /*Setting width to 100% allows for fluid design*/
     margin-top:20px;
     margin-bottom:20px;
     color:white;
 }
 
 .projectsbanner {
-    position:static;
+    position: absolute;
+    right:540px;
+    top: 140px;
     color:white;
-    text-align:center; /*This replaces the positioning in the style.css file*/
 
 }
 
-.contactform {
-    color:white;
-    display: block; /*Block allows elements to go to a new line, inline-block will make it so everything is on the same line*/
-    width: 100%;
-    margin: 20px;
-}
-
-.contactform h1 {
-    text-align: center;
-    color:white;
-}
-
-.contactform label {
-    display: block;
-}
-
-.contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-}
 
 h1,h2,h3,h4,h5,h6,p,li {
     margin-left:15px;
 }
 
-.contactfooter {
-    color:white;
-    height:10px;
-    font-size:10px;
-    position:static;
-    text-align: center;
-    bottom:70px;
-}
 
 .box {
     color: white;
@@ -94,14 +66,23 @@ img{
 }
 
 .aboutmeimage { 
-    display: block; 
-    position: relative;
+    position: relative; /*Relative places an element relative to its original position or the position that it was supposed to be in originally*/
     right: 40%;
     top: 19%;
     background-color:white;
     padding: 7px;
     width:100%;
-    height: auto; /*Setting height to auto preserves the aspect ratio*/
+    height: auto; /*Setting height to auto with 100% width preserves the aspect ratio and keeps video clear*/
+}
+
+.aboutmevideo {
+    position: relative;
+    right: 10%;
+    top: 19%;
+    background-color: white;
+    padding: 7px;
+    width:100%;
+    height: auto;
 }
 
 
@@ -123,11 +104,32 @@ img{
 
 
 
-.aboutmevideo {
-    position: relative;
-    right: 10%;
-    top: 19%;
-    background-color: white;
-    padding: 7px;
-    width:100%;
+
+
+
+.contactform {
+    color:white;
+    display: block; /*Block allows elements to go to a new line, inline-block will make it so everything is on the same line*/
+    width: 100%;/*Using a percentage allows the boxes to stay a consistent width, as well as allowing for size readjustment (fluid design)*/
+    margin: 20px;
+}
+
+
+
+.contactform label {
+    display: block;
+}
+
+.contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.contactfooter {
+    color:white;
+    height:10px;
+    font-size:10px;
+    position:fixed;
+    bottom:70px;
 }

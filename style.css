@@ -53,47 +53,12 @@ width: 100%; /*Defining width and height to 100% fills the entire page, stopping
 
 }
 
-.contactform{
-    color:white;
-    display: block;
-    position:absolute;
-    right:40%;
-    top:18%;
-    margin-bottom:20px;
-    width:400px;
-}
 
-
-
-.contactform h1{
-    color:white;
-    position:absolute;
-    right: 50%;
-}
-
-.contactform label {
-    display: block; /*Ensures labels stack vertically*/
-    margin-bottom: 8px;
-}
-
-.contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-
-
-}
 
 h1,h2,h3,h4,h5,h6,p,li {
     margin-left:15px;
 }
-.contactfooter {
-    color:white;
-    height:10px;
-    font-size:10px;
-    position:fixed;
-    bottom:70px;
-}
+
 
 
 .box {
@@ -101,7 +66,7 @@ h1,h2,h3,h4,h5,h6,p,li {
     height: 300px;
     width: 500px;
     margin-top: 150px;
-    margin-left: -1px;
+    margin-left: -1px; /*Margin-left prevents overlapping of text (specifically on the projects page)*/
 }
 
 img{
@@ -109,12 +74,20 @@ img{
 }
 
 .aboutmeimage { 
-    display: block; 
     position: absolute;
     right: 40%;
     top: 19%;
     background-color:white;
-    padding: 7px;
+    padding: 7px; /*Adding padding to the aboutmeimage div and then applying a white background allows me to add an outline to it*/
+}
+
+.aboutmevideo {
+    position: absolute;
+    right: 10%;
+    top: 19%;
+    background-color: white;
+    padding: 7px; /*Same idea of adding padding to the div then setting the background to white*/
+
 }
 
 
@@ -135,13 +108,38 @@ img{
 }
 
 
+.contactform{
+    color:white;
+    display: block; /*Vertical stack*/
+    position:absolute;
+    right:40%;
+    top:18%;
+    margin-bottom:20px;
+    width:400px;
+}
 
-.aboutmevideo {
-    position: absolute;
-    right: 10%;
-    top: 19%;
-    background-color: white;
-    padding: 7px;
+
+
+
+
+.contactform label {
+    display: block; /*Ensures labels stack vertically*/
+    margin-bottom: 8px;
+}
+
+.contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
 
 }
 
+
+.contactfooter {
+    color:white;
+    height:10px;
+    font-size:10px;
+    position:fixed; /*Fixed position allows for something to stay on the page while scrolling*/
+    bottom:70px;
+}

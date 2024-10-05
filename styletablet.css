@@ -44,51 +44,21 @@ width: 100%; /*Defining width and height to 100% fills the entire page, stopping
 }
 
 .projectsbanner {
-    position: static;
+    position: absolute;
+    right:540px;
+    top: 140px;
     color:white;
-    text-align: center;
 
 }
 
-.contactform{
-    color:white;
-    display: block;
-    margin-bottom:20px;
-    width:70%;
-}
 
-
-
-.contactform h1{
-    color:white;
-    text-align: center;
-}
-
-.contactform label {
-    display: block; 
-    margin-bottom: 8px;
-}
-
-.contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-
-
-}
 
 h1,h2,h3,h4,h5,h6,p,li {
     margin-left:15px;
 }
 
 
-.contactfooter {
-    color:white;
-    height:10px;
-    font-size:10px;
-    position: relative;
-    bottom:70px;
-}
+
 
 
 .box {
@@ -106,7 +76,6 @@ img{
 }
 
 .aboutmeimage { 
-    display: block; 
     position: relative; /*Remove absolute positioning*/
     right: 40%;
     top: 19%;
@@ -114,6 +83,17 @@ img{
     height:auto; /*Preserving aspect ratio again*/
     background-color:white;
     padding: 7px;
+}
+
+.aboutmevideo {
+    position: relative;
+    width:70%;
+    height:auto;
+    right: 10%;
+    top: 19%;
+    background-color: white;
+    padding: 7px;
+
 }
 
 
@@ -134,14 +114,32 @@ img{
 }
 
 
-
-.aboutmevideo {
-    position: relative;
+.contactform{
+    color:white;
+    display: block;
+    margin-bottom:20px;
     width:70%;
-    height:auto;
-    right: 10%;
-    top: 19%;
-    background-color: white;
-    padding: 7px;
+}
 
+
+
+.contactform label {
+    display: block; 
+    margin-bottom: 8px;
+}
+
+.contactform input[type="text"], .contactform input[type="email"], .contactform textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+
+}
+
+.contactfooter {
+    color:white;
+    height:10px;
+    font-size:10px;
+    position: fixed;
+    bottom:70px;
 }
